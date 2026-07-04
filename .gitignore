@@ -1,20 +1,23 @@
+# Virtual Environment
+venv/
+
 # Python
 __pycache__/
 *.pyc
-*.pyo
 
-# Virtual Environment
-venv/
-.venv/
-
-# VS Code
-.vscode/
+# Environment Variables
+.env
 
 # Logs
 logs/
 
-# OS files
+# VS Code
+.vscode/
+
+# Spark
+.metastore_db/
+spark-warehouse/
+
+# OS Files
 .DS_Store
 Thumbs.db
-
-.env
