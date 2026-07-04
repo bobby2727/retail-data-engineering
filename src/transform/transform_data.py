@@ -1,7 +1,7 @@
 from pathlib import Path
 import pandas as pd
 from src.utils.logger import logger
-
+from src.config.config import SILVER_PATH
 
 class DataTransformer:
     """
@@ -10,7 +10,7 @@ class DataTransformer:
     """
 
     def __init__(self):
-        self.silver_path = Path("data/silver")
+        self.silver_path = SILVER_PATH
         self.silver_path.mkdir(parents=True, exist_ok=True)
 
     def clean_sales(self, df):

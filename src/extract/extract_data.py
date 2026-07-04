@@ -1,5 +1,6 @@
 import pandas as pd
 from pathlib import Path
+from src.config.config import BRONZE_PATH
 
 
 class DataExtractor:
@@ -9,7 +10,7 @@ class DataExtractor:
 
 
     def __init__(self):
-        self.bronze_path = Path("data/bronze")
+        self.bronze_path = BRONZE_PATH
 
     def read_sales(self):
         return pd.read_csv(self.bronze_path / "sales.csv")
